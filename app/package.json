@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "dotenv -e .env.local.dist next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv-cli": "^7.3.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
